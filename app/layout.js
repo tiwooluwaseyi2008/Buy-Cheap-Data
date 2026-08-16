@@ -1,4 +1,5 @@
 import './globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata = {
   title: 'Buy Cheap Data | MTN, GLO, AIRTEL',
@@ -26,6 +27,7 @@ export default function RootLayout({ children }) {
           </div>
         </header>
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
